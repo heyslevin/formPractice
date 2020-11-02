@@ -1,3 +1,3 @@
-#Form practice for The Odin Project
+# Form practice for The Odin Project
 
 Part of the Javascript course.
