@@ -1,0 +1,43 @@
+// INTERFACE
+
+—HTML
+
+Form
+	form
+		label for=“input”
+		input
+			type=“”
+			minlength
+			maxlength
+			id = “” // same as label
+			name = “” // for get and post
+		button
+
+Email
+Country
+Zip Code
+Password
+Password confirmation
+
+—-CSS
+	p 
+	input: width: 100%, border, margin: 0, box-sizing: border-box? (to define height and width)
+	input: invalid { border-color, background color }
+	input:focus:invalid {outline:none?)
+	input: valid {background green}
+
+Button
+	<button>Submit</button>
+
+// FUNCTIONALITY
+	
+	// For each input
+		1. Query selector for input (input = querySelector)
+		2. Add event listener for input (“input”, function())
+		3. Function in event listener: Check validity IF
+			if (!input.validity.valid)
+				input.setCustomValidity(“Message”)
+			else
+				input.setCustomValidity(“This is ok”) // Maybe do this, or use “”
+				
+
